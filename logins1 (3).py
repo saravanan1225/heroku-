@@ -318,9 +318,9 @@ def video():
 				my_expander.write("done")
 				video1 = moviepy.editor.VideoFileClip(video.name)
 				audio = video1.audio
-				audio.write_audiofile(r"C:\Users\uvima\Desktop\Streamlit app\Sentimental Analysis final\Stream\sample.wav")
+				audio.write_audiofile(r"sample.wav")
 				my_expander.audio("sample.wav", format='audio/wav')
-				audio1();
+				#audio1();
 				audio='sample.wav'
 				rate,data=scipy.io.wavfile.read('sample.wav')
 				my_expander.write("RATE OF AUDIO")
@@ -426,7 +426,7 @@ def video():
 
 				file_var = AudioSegment.from_ogg(video.name) 
 				file_var.export('sample.wav', format='wav')
-				audio1();
+				#audio1();
 				plot_spectrogram();
 				wit();
 
